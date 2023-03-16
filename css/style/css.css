@@ -40,6 +40,7 @@ body{
        height: 800px;
        position: relative;
        margin-top: -400px;
+       z-index: -9999;
     }
 
     .content  .triangle .photo {
@@ -163,7 +164,7 @@ body{
         color: #fff;
 
     }
-    .content .container .email .email-inp input[type="email"]
+    
     .content .container .email input[type="submit"]{
         margin-left: 90px;
         margin-top: 20px;
