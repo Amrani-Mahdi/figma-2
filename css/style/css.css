@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+.content{
+    width: 100%;
+    
+}
+.content .container {
+    width: 1250px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/* Start Mobile */
+
+@media screen and (max-width:769px) {
+
+    .content {
+        width: 100%;
+        position: relative;
+       
+    }
+    .content .container {
+        width: 90%;
+    }
+    .content  .triangle {
+       width: 100%;
+       height: 800px;
+       position: relative;
+       margin-top: -400px;
+    }
+
+    .content  .triangle .photo {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+    }
+    .content  .triangle .ios-and{
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        z-index: 99999;
+
+    }
+    .content  .triangle a img:nth-child(1){
+        width: 110px;
+        height: 35px;
+
+    }
+    .content  .triangle a:nth-child(1) img{
+        width: 110px;
+        height: 45px;
+  
+    }
+
+    .content  .phones{
+    
+       width: 100%;
+       position: absolute;
+       top: 90%;
+       z-index: 9999;
+       transform: translateY(-90%);
+       
+      
+    }
+
+    .content .container .head-line{
+        margin: auto;
+        width: 175px;
+        height: 11px;
+        background-color:#F24F04 ;
+        display: block;
+        border-radius: 30px;
+        margin-top: 3px;
+        opacity: 25%;
+    }
+    .content .container h1 {
+        color: #F24F04;
+        font-size: 23px;
+        margin-top: 5px;
+        font-weight: 900;
+        
+    }
+    .content .container h2 {
+        color: #F24F04;
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 800;
+    }
+    .content .container .text {
+        color: #000;
+        margin-top: 40px;
+
+    }
+    .content .container .text p {
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .content .container .text h3 {
+        color: #000;
+        font-weight: 900;
+        font-size: 20px;
+        position: relative;
+
+    }
+    .content .container .text .text-promotion {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+
+    }
+    .content .container .text .text-promotion h1{
+        color: #F24F04;
+        font-size: 40px;
+
+    }
+    .content .container .text .text-promotion span{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .content .container .email{
+        margin-top:30px ;
+        z-index: 999;
+    }
+    .content .container .email p {
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .content .container .email .email-inp{
+        display: block;
+        background-color: #F24F04;
+        width: 200px;
+        display: flex;
+        border-radius: 40px;
+        padding: 6px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
+    }
+    .content .container .email .email-inp input[type="email"]{
+        font-size: 16px;
+        border-radius: 40px;
+        width: 100%;
+        height: 30px;
+        border: none;
+        background: none;
+        outline: none;
+        color: #fff;
+
+    }
+    .content .container .email .email-inp input[type="email"]
+    .content .container .email input[type="submit"]{
+        margin-left: 90px;
+        margin-top: 20px;
+        border-radius: 40px;
+        padding: 8px 20px;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .content .bub-one{
+        position: absolute;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        right: 15%;
+        top: 7%;
+        background-color: #F24F04;
+    }
+    .content .bub-two{
+        position: absolute;
+        border-radius: 50%;
+        height: 46px;
+        width: 46px;
+        left: -10%;
+        top: -30%;
+        opacity: 10%;
+        background-color: #F24F04;
+    }
+    
+    .content .bub-three{
+        position: absolute;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        right: 10%;
+        bottom: -130%;
+        opacity: 40%;
+        filter: blur(3px);
+        background-color: #F24F04;
+        
+    }
+    
+    .content .bub-four{
+        position: absolute;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        left: 10%;
+        top: 20%;
+        background-color: #F24F04;
+        opacity: 20%;
+        filter: blur(3px);
+     
+    }
+    .content .triangle .bub-five {
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        transform: translateY(-70%);
+        height: 33px;
+        width: 33px;
+        opacity: 29%;
+        border-radius: 50%;
+        background-color: #F24F04;
+
+    }
+    .content .triangle .blur-bub{
+        position: absolute;
+        top: 85%;
+        transform: translateY(-85%);
+        filter: blur(174px);
+        opacity: 30%;
+        right: 0;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: #F24F04;
+    }
+    
+    
+}
