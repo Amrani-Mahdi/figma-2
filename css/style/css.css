@@ -6,17 +6,224 @@
     font-family: 'Inter', sans-serif;
 }
 body{
-    background-color: #fff;
+    background-color: #FFFCF8;
 }
 .content{
     width: 100%;
-    
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
 }
 .content .container {
-    width: 1250px;
+    width: 1300px;
     margin: auto;
 }
+.content .phones{
+    display: none;
+}
+.content .triangle{
+    display: none;
+}
 
+.content .triangle-web img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -9999;
+
+}
+.content .triangle-web img:nth-child(2){
+    position: absolute;
+    height: 85%;
+    width: 75%;
+    right: -90px;
+    bottom: -60px;
+    
+}
+.content .triangle-web img.elps1{
+    position: absolute;
+    top: 20%;
+    left:35%;
+    width: 60px;
+    height: 60px;
+  
+}
+.content .triangle-web img.elps2{
+    position: absolute;
+    top: 60%;
+    left:2%;
+    width: 30px;
+    height: 30px;
+  
+}
+.content .triangle-web img.elps3{
+    position: absolute;
+    top: 5%;
+    right: 40%;
+    width: 20px;
+    height: 20px;
+  
+}
+.content .triangle-web img.elps4{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+  
+}
+.content .triangle-web img.elps5{
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    width: 60px;
+    height: 60px;
+  
+}
+.content .triangle-web img.elps6{
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    width: 100px;
+    height: 80px;
+  
+}
+.content .triangle-web img.elps7{
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 50px;
+    height: 50px;
+  
+}
+.content .triangle-web .bub-home-one {
+    height: 230px;
+    width: 230px;
+    background-color: #F9A782;
+    border-radius: 50%;
+    position: absolute;
+    border: 10px solid #fff;
+    right: 15%;
+}
+.content .container h1 {
+    color: #F24F04;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 900;
+    
+}
+.content .container h2 {
+    color: #F24F04;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.content .container .text {
+    color: #000;
+    margin-top: 20px;
+    
+    
+
+}
+.content .container .text p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 600px;
+}
+.content .container .text h3 {
+    color: #000;
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+
+}
+.content .container .text .text-promotion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    margin-top: 10px;
+
+}
+.content .container .text .text-promotion h1{
+    color: #F24F04;
+    font-size: 70px;
+    margin-top: 0;
+
+}
+.content .container .text .text-promotion .bub-four {
+    display: none;
+}
+.content .container .text .text-promotion .bub-three {
+    display: none;
+}
+.content .container .text .text-promotion span{
+    font-size: 25px;
+    font-weight: 900;
+    width: 400px;
+}
+.content .container .email{
+    margin-top:20px ;
+    z-index: 999;
+}
+.content .container .email p {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content .container .email .email-inp{
+    display: block;
+    background-color: #F24F04;
+    width: 250px;
+    display: flex;
+    border-radius: 40px;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
+}
+.content .container .email .email-inp input[type="email"]{
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 40px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+
+}
+
+.content .container .email input[type="submit"]{
+    margin-left: 140px;
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 8px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.content  .ios-and-2{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+.content  .ios-and-2 a img:nth-child(1){
+    width: 102px;
+    height: 32px;
+
+}
+.content  .ios-and-2 a:nth-child(1) img{
+    width: 100px;
+    height: 40px;
+
+}
+.content .triangle-web2{
+   display: none;
+    
+}
 
 
 
@@ -25,24 +232,115 @@ body{
 
 /* Start Mobile */
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:700px) {
+    body{
+        background-color: #FFF;
+    }
 
     .content {
         width: 100%;
         position: relative;
-       
+
+        height: 100vh;
     }
     .content .container {
         width: 90%;
     }
     .content  .triangle {
-       width: 100%;
-       height: 800px;
-       position: relative;
-       margin-top: -400px;
-       z-index: -9999;
+        width: 100%;
+        display: block;
+        position: relative;
+
+        top: 60%;
     }
 
+    .content  .triangle span {
+        position: absolute;
+        border-bottom: 600px solid #F24F04;
+        border-left:500px solid transparent;
+        bottom: 0;
+        right: 0;
+        z-index: -3;
+      
+    }
+    .content  .triangle .img-mobile{
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(12%,-130%);
+        z-index: -1;
+    }
+    .content .triangle .blur-bub{
+        position: absolute;
+        height: 600px;
+        transform: translate(-50%,-50%);
+        background-color: blue;
+        width: 600px;
+        opacity: 15%;
+        filter: blur(4px);
+    }
+    .content .triangle .ios-and-03{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-10%,-280%);
+    }
+    .content .triangle img.elps1{
+        position: absolute;
+        width: 60px;
+        transform: translate(-600%,-200%);
+        height: 60px;
+    }
+    .content .triangle img.elps2{
+        position: absolute;
+        transform: translate(-600%,-500%);
+        left:2%;
+        width: 30px;
+        height: 30px;
+      
+    }
+    .content .triangle img.elps3{
+        position: absolute;
+        transform: translate(-800%,-880%);
+        height: 20px;
+      
+    }
+    .content .triangle img.elps4{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        transform: translate(-20%,-600%);
+      
+    }
+    .content .triangle img.elps5{
+        position: absolute;
+        bottom: 0;
+        left: 7%;
+        width: 60px;
+        height: 60px;
+        transform: translate(-20%,-600%);
+      
+    }
+    .content .triangle img.elps6{
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+        width: 100px;
+        height: 80px;
+      
+    }
+    .content .triangle img.elps7{
+        position: absolute;
+        bottom: 5%;
+        right: 30%;
+        width: 50px;
+        height: 50px;
+      
+    }
     .content  .triangle .photo {
         position: absolute;
         bottom: 0;
@@ -51,19 +349,19 @@ body{
     }
     .content  .triangle .ios-and{
         position: absolute;
-        bottom: 10px;
-        right: 20px;
+        bottom: 5px;
+        right: 40px;
         z-index: 99999;
 
     }
     .content  .triangle a img:nth-child(1){
-        width: 110px;
-        height: 35px;
+        width: 102px;
+        height: 32px;
 
     }
     .content  .triangle a:nth-child(1) img{
-        width: 110px;
-        height: 45px;
+        width: 100px;
+        height: 35px;
   
     }
 
@@ -71,9 +369,10 @@ body{
     
        width: 100%;
        position: absolute;
-       top: 90%;
        z-index: 9999;
-       transform: translateY(-90%);
+       transform: translateY(-130%);
+       display: block;
+
        
       
     }
@@ -90,31 +389,32 @@ body{
     }
     .content .container h1 {
         color: #F24F04;
-        font-size: 23px;
+        font-size: 18px;
         margin-top: 5px;
         font-weight: 900;
         
     }
     .content .container h2 {
         color: #F24F04;
-        font-size: 18px;
-        margin-top: 20px;
+        font-size: 15px;
+        margin-top: 15px;
         font-weight: 800;
     }
     .content .container .text {
         color: #000;
-        margin-top: 40px;
+        margin-top: 20px;
 
     }
     .content .container .text p {
         font-weight: 400;
-        font-size: 13px;
-        margin-top: 20px;
+        font-size: 12px;
+        margin-top: 15px;
+        max-width: 300px;
     }
     .content .container .text h3 {
         color: #000;
         font-weight: 900;
-        font-size: 20px;
+        font-size: 16px;
         position: relative;
 
     }
@@ -128,12 +428,13 @@ body{
     }
     .content .container .text .text-promotion h1{
         color: #F24F04;
-        font-size: 40px;
+        font-size: 30px;
 
     }
     .content .container .text .text-promotion span{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 900;
+        max-width: 300px;
     }
     .content .container .email{
         margin-top:30px ;
@@ -141,20 +442,21 @@ body{
     }
     .content .container .email p {
         font-weight: 700;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     
     .content .container .email .email-inp{
         display: block;
         background-color: #F24F04;
-        width: 200px;
+        width: 180px;
         display: flex;
         border-radius: 40px;
-        padding: 6px;
+        padding: 3px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
     }
     .content .container .email .email-inp input[type="email"]{
         font-size: 16px;
+        padding: 0 10px;
         border-radius: 40px;
         width: 100%;
         height: 30px;
@@ -166,8 +468,8 @@ body{
     }
     
     .content .container .email input[type="submit"]{
-        margin-left: 90px;
-        margin-top: 20px;
+        margin-left: 70px;
+        margin-top: 10px;
         border-radius: 40px;
         padding: 8px 20px;
         border: none;
@@ -221,11 +523,18 @@ body{
         filter: blur(3px);
      
     }
+   
+    .content .triangle .phones{
+        max-width: 80%;
+        position: absolute;
+        right: 3%;
+
+    }
     .content .triangle .bub-five {
         position: absolute;
         top: 70%;
         left: 5%;
-        transform: translateY(-70%);
+        transform: translateY(-100%);
         height: 33px;
         width: 33px;
         opacity: 29%;
@@ -236,7 +545,7 @@ body{
     .content .triangle .blur-bub{
         position: absolute;
         top: 85%;
-        transform: translateY(-85%);
+        transform: translate(-50% , -150%);
         filter: blur(174px);
         opacity: 30%;
         right: 0;
@@ -244,6 +553,395 @@ body{
         width: 300px;
         border-radius: 50%;
         background-color: #F24F04;
+    }
+    .content .triangle-web{
+        display: none;
+    }
+    .ios-and-2{
+        display: none;
+    }
+
+
+    
+    
+}
+@media screen and (min-width:700px) and (max-width:1000px){
+    .content {
+        width: 100%;
+        height: 850px;
+        position: relative;
+    }
+
+  
+    .content .container {
+        width: 90%;
+
+    }
+    .content .container h1 {
+        font-size: 30px;
+        
+    }
+    .content .container h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .content .container .text h3 {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+    .content .container .text p{
+        max-width: 500px;
+        line-height: 20px;
+    }
+
+    .content .triangle-web{
+        display: none;
+    }
+    .content .triangle-web2{
+        margin-top: -400px;
+        width: 100%;
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .content .triangle-web2 span{
+        border-bottom: 800px solid #F24F04;
+        border-left:750px solid transparent;
+        position: absolute;
+        right: 0;
+        z-index: -9999;
+    }
+    .content .ios-and-2{
+        left: 80%;
+    }
+
+    .content .container .text .text-promotion{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content .ios-and-2 a img:nth-child(1){
+        width: 102px;
+        height: 35px;
+
+    }
+    .content .ios-and-2  a:nth-child(1) img{
+        width: 102px;
+        height: 40px;
+  
+    }
+    .content .triangle-web2{
+        height: 100%;
+        z-index: -9999;
+        position: relative;
+    }
+    .content .triangle-web2 span .bub-home-one {
+        height: 230px;
+        width: 230px;
+        background-color: #F9A782;
+        border-radius: 50%;
+        position: absolute;
+        border: 10px solid #fff;
+        right: 15%;
+
+    }
+    .content .triangle-web2 .dsq{
+        position: absolute;
+        max-width: 80%;
+        right: -5%;
+        bottom: 25%;
+        z-index: -999;
+        
+    }
+    .content .triangle-web2 img.elps1{
+        position: absolute;
+        top: 20%;
+        left:35%;
+        width: 60px;
+        height: 60px;
+      
+    }
+    .content .triangle-web2 img.elps2{
+        position: absolute;
+        top: 60%;
+        left:2%;
+        width: 30px;
+        height: 30px;
+      
+    }
+    .content .triangle-web2 img.elps3{
+        position: absolute;
+        top: 5%;
+        right: 40%;
+        width: 20px;
+        height: 20px;
+      
+    }
+    .content .triangle-web2 img.elps4{
+        position: absolute;
+        bottom:20%;
+        right:50%;
+        width: 80px;
+        height: 80px;
+      
+    }
+    .content .triangle-web2 img.elps5{
+        position: absolute;
+        top: -10%;
+        right:  40%;
+        width: 60px;
+        height: 60px;
+      
+    }
+    .content .triangle-web2 img.elps6{
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+        width: 100px;
+        height: 80px;
+      
+    }
+    .content .triangle-web2 img.elps7{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        width: 50px;
+        height: 50px;
+      
+    }
+
+
+
+
+  
+}
+@media screen and (min-width:1001px) and (max-width:1150px){
+    
+    .content{
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    .content .container {
+        width: 100%;
+        margin: auto;
+    }
+    .content .phones{
+        display: none;
+    }
+    .content .triangle{
+        display: none;
+    }
+    
+    .content .triangle-web img {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: -9999;
+    
+    }
+    .content .triangle-web img:nth-child(2){
+        position: absolute;
+        height: 85%;
+        width: 75%;
+        right: -90px;
+        bottom: -60px;
+        
+    }
+    .content .triangle-web img.elps1{
+        position: absolute;
+        top: 20%;
+        left:35%;
+        width: 60px;
+        height: 60px;
+      
+    }
+    .content .triangle-web img.elps2{
+        position: absolute;
+        top: 60%;
+        left:2%;
+        width: 30px;
+        height: 30px;
+      
+    }
+    .content .triangle-web img.elps3{
+        position: absolute;
+        top: 5%;
+        right: 40%;
+        width: 20px;
+        height: 20px;
+      
+    }
+    .content .triangle-web img.elps4{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+      
+    }
+    .content .triangle-web img.elps5{
+        position: absolute;
+        bottom: 0;
+        left: 7%;
+        width: 60px;
+        height: 60px;
+      
+    }
+    .content .triangle-web img.elps6{
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+        width: 100px;
+        height: 80px;
+      
+    }
+    .content .triangle-web img.elps7{
+        position: absolute;
+        bottom: 5%;
+        right: 30%;
+        width: 50px;
+        height: 50px;
+      
+    }
+    .content .triangle-web .bub-home-one {
+        height: 230px;
+        width: 230px;
+        background-color: #F9A782;
+        border-radius: 50%;
+        position: absolute;
+        border: 10px solid #fff;
+        right: 15%;
+    }
+    .content .container  h1.title  {
+        color: #F24F04;
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: 900;
+        margin-left: 20px;
+
+        
+    }
+    .content .container h2 {
+        color: #F24F04;
+        font-size: 24px;
+        margin-top: 20px;
+        font-weight: 800;
+        margin-left: 20px;
+    }
+    .content .container .text {
+        color: #000;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+        
+    
+    }
+    .content .container .text p {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 15px;
+        width: 600px;
+        max-width: 550px;
+    }
+    .content .container .text h3 {
+        color: #000;
+        font-weight: 900;
+        font-size: 30px;
+        position: relative;
+        
+    
+    }
+    .content .container .text .text-promotion {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        margin-top: 10px;
+        
+    
+    }
+    .content .container .text .text-promotion h1{
+        color: #F24F04;
+        font-size: 70px;
+        margin-top: 0;
+    
+    }
+    .content .container .text .text-promotion .bub-four {
+        display: none;
+    }
+    .content .container .text .text-promotion .bub-three {
+        display: none;
+    }
+    .content .container .text .text-promotion span{
+        font-size: 25px;
+        font-weight: 900;
+        width: 250px;
+        font-size: 20px;
+        
+    }
+    .content .container .email{
+        margin-top:20px ;
+        z-index: 999;
+    }
+    .content .container .email p {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .content .container .email .email-inp{
+        display: block;
+        background-color: #F24F04;
+        width: 250px;
+        display: flex;
+        border-radius: 40px;
+        padding: 3px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
+        margin-left: 20px;
+    }
+    .content .container .email .email-inp input[type="email"]{
+        font-size: 16px;
+        padding: 0 10px;
+        border-radius: 40px;
+        width: 100%;
+        height: 30px;
+        border: none;
+        background: none;
+        outline: none;
+        color: #fff;
+    
+    }
+    
+    .content .container .email input[type="submit"]{
+        margin-left: 160px;
+        margin-top: 20px;
+        border-radius: 40px;
+        padding: 8px 20px;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+    .content  .ios-and-2{
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+    .content  .ios-and-2 a img:nth-child(1){
+        width: 102px;
+        height: 32px;
+    
+    }
+    .content  .ios-and-2 a:nth-child(1) img{
+        width: 100px;
+        height: 40px;
+    
+    }
+    .content .triangle-web2{
+       display: none;
+        
     }
     
     
