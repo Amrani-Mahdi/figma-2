@@ -271,12 +271,12 @@ body{
       
     }
     .content  .triangle .img-mobile{
-        height: 330px;
-        width: 330px;
+        height: 360px;
+        width: 360px;
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(0%,-150%);
+        transform: translate(0%,-140%);
         z-index: -1;
     }
     .content .triangle .blur-bub{
@@ -298,12 +298,13 @@ body{
     .content .triangle img.elps1{
         position: absolute;
         width: 60px;
-        transform: translate(-600%,-350%);
+        transform: translate(-630%,-400%);
         height: 60px;
+       
     }
     .content .triangle img.elps2{
         position: absolute;
-        transform: translate(-600%,-500%);
+        transform: translate(-650%,-500%);
         left:-30%;
         width: 30px;
         height: 30px;
@@ -484,6 +485,7 @@ body{
         background-color: #000;
         color: #fff;
         cursor: pointer;
+        z-index: 9999;
     }
 
     .content .bub-one{
@@ -561,6 +563,7 @@ body{
         width: 300px;
         border-radius: 50%;
         background-color: #F24F04;
+        z-index: -9999;
     }
     .content .triangle-web{
         display: none;
